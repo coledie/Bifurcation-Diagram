@@ -1,5 +1,5 @@
 # Bifurcation-Diagram
-Bifurcation diagrams show the state values visited by a system over a given time period for different system hyperparameter settings. In this diagram, each X value represents a hyperparameter value for the system and the corresponding Y values are the states visited. These diagrams are commonly used to visualize the orbital periods of systems. If a changes in hyperparameter values tend to result in almost the same state spaces, the system is considered stable for those hyperparameter values.
+Bifurcation diagrams show the states visited by a system over a given time period, across system hyperparameter values, showing the attractors of a system. A stable system is shown when changes in hyperparameter values tend to result in similar orbits, while chaos is shown when the orbits begin to change rapidly. This code is capable of visualizing the bifurication diagrams of discrete dynamical systems, especially with low dimensional rules. The X axis represents a hyperparameter and the Y axis represents a state variable. 
 
 
 ## Logistic Map
@@ -7,22 +7,29 @@ The Logistic Map is a non-linear dynamical equation modelling the population of 
 
 ```
 x(n+1) = rx(n)(1-x(n))
-x(0) = .5
+x(0) = any number in (0, 1)
 ```
 
-Where x(n) is the percent of the enviornment capacity that the population of generation n occupies. r is a hyperparameter representing growth rate with a domain of [0, 4].
+Where x(n) is the percent of the enviornment population capacity occupied by generation n. r is a hyperparameter representing growth rate with a domain of [0, 4].
 
-Changing the value of r creates different orbits and attractors, as seen in the bifurication diagram. As r increases, bifurications occur and the period of the orbit doubles. Eventually, at roughly r=3.8, the system begins to produce chaos, sometimes breifely becoming stable again. 
+Changing the value of r creates different attractors, as seen in the bifurication diagram. As r increases, bifurications occur where the orbital period doubles. Eventually, at roughly r=3.6, the system becomes chaotic, with intermittent stablity.
 
 Color of the dots is the number of unique values in the orbit.
 ![Bifurication Diagram showing temperature of logistic map](img/temperature.PNG)
 
 
-The Logistic Map is a strange attractor, it is self repeating at multiple scales, visualized below.
+The Logistic Map is a strange attractor, it is self repeating at multiple scales. At roughly r=3.85, a triple bifurication followed by chaos is shown at three heights, that look very much similar to the larger triple bifurication starting at r=3.0, followed by chaos at r=3.6.
 ![Zoomed in Bifurication Diagram showing temperature of logistic map](img/temperature_zoom1.PNG)
 
-![alt text]( "Hover text")
+These similarities are present all over the the diagram. The chaotic region is not random, the attractors within it represent unknown patterns governed by emergent properties of simple dynamics.
 
+Color of the dots is the entropy of the points shown.
+
+![Bifurication Diagram showing entropy of logistic map](img/entropy.PNG)
+
+![Zoomed in Bifurication Diagram showing entropy of logistic map](img/entropy_zoom1.PNG)
+
+![2x Zoomed in Bifurication Diagram showing entropy of logistic map](img/entropy_zoom2.PNG)
 
 
 ## More
