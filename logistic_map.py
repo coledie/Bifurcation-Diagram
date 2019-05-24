@@ -1,6 +1,11 @@
 import matplotlib.pyplot as plt
 from math import log
 
+# TODO - Color based on probability mass
+# TODO - Show temperature/entropy as background color
+# TODO - https://en.wikipedia.org/wiki/List_of_chaotic_maps 
+
+
 # entropy coloring stable 100-800 generations_to_plot
 COLOR_MAP = {.04: 'violet', .13: 'red', .25: 'pink', .5: 'orange', 1:'blue'}
 def COLOR(x):
