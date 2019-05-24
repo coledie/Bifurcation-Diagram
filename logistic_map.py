@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 from math import log
+from random import random
 
 # TODO - Color based on probability mass
 # TODO - Show temperature/entropy as background color
@@ -28,7 +29,7 @@ if __name__ == '__main__':
     # Setup
     RULE = lambda x: r * x * (1-x)
 
-    USE_ENTROPY = True  # Measure entropy or temperature by color
+    USE_ENTROPY = False  # Measure entropy or temperature by color
 
     MIN = 0            # Min r
     MAX = 4            # Max r
@@ -43,14 +44,14 @@ if __name__ == '__main__':
     Z = []             # entropy or temperature
     for r in (MIN + (i / GRANULARITY) for i in range((MAX-MIN) * GRANULARITY)):
         # Initialize
-        populations = [.5]
+        populations = [max(.1, random())]  # set to ~.5 value with small generation cound
         if GENERATIONS == GENERATIONS_TO_PLOT:
             X.append(r)
             Y.append(NORMALIZE(populations[-1]))  
 
         # Calculate Y
         for g in range(len(populations), GENERATIONS):
-            population = max(0, RULE(populations[-1]))
+            population = RULE(populations[-1])
     
             populations.append(population)
 
