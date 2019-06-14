@@ -42,6 +42,9 @@ Poincare plot for the logisitic map.
 Poincare plot of uniform random samples.
 ![Poincare plot of uniform random samples](img/poincare_random.png)
 
+The poincare plot can have an arbitrary number of dimensions.
+![3D Poincare plot of logistic map at r=3.95](img/poincare3d_logistic.png)
+
 
 ## More
 [Logistic Map Blog Post](https://geoffboeing.com/2015/03/chaos-theory-logistic-map/)
