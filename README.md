@@ -32,6 +32,17 @@ Color of the dots is the entropy of the points shown.
 ![2x Zoomed in Bifurication Diagram showing entropy of logistic map](img/entropy_zoom2.PNG)
 
 
+## Chaos vs Randomness
+A useful tool in distinguishing chaos and randomness is the poincare plot. The poincare plot is a visualization of a time series of the state space. With points (f(t), f(t+1)) for all t, this plot clearly illustrates constraints on the state space and state change dynamics. 
+All y values along x=1 represent states have come after f(t) = 1.
+
+Poincare plot for the logisitic map.
+![Poincare plot of logistic map at r=3.95](img/poincare_logistic.png)
+
+Poincare plot of uniform random samples.
+![Poincare plot of uniform random samples](img/poincare_random.png)
+
+
 ## More
 [Logistic Map Blog Post](https://geoffboeing.com/2015/03/chaos-theory-logistic-map/)
 
@@ -40,3 +51,5 @@ Color of the dots is the entropy of the points shown.
 [Bifurication Theory](https://en.wikipedia.org/wiki/Bifurcation_theory)
 
 [Logistic Map](https://en.wikipedia.org/wiki/Logistic_map)
+
+[Poincare Plot](https://en.wikipedia.org/wiki/Poincar%C3%A9_plot)
