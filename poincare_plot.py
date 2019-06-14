@@ -15,3 +15,9 @@ def poincare_plot(data):
     plt.show()
 
     return X, Y
+
+
+if __name__ == '__main__':
+    data = np.random.uniform(size=100)
+
+    poincare_plot(data)
