@@ -37,6 +37,7 @@ A useful tool in distinguishing chaos and randomness is the poincare plot. The p
 All y values along x=1 represent states have come after f(t) = 1.
 
 Poincare plot for the logisitic map.
+
 ![Poincare plot of logistic map at r=3.95](img/poincare_logistic.png)
 
 Poincare plot of uniform random samples.
